@@ -7,7 +7,7 @@
 #define radio1 5
 #define radio2 6
 
-//#define ptt -
+LiquidCrystal_I2C lcd(0x3F, 20, 4); 
 
 byte antenna1[] = {
   B00000,
@@ -19,8 +19,6 @@ byte antenna1[] = {
   B11100,
   B11110
 };
-
-LiquidCrystal_I2C lcd(0x3F, 20, 4); 
 
 void setup ()
 {
